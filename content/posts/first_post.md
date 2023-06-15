@@ -1,0 +1,68 @@
+---
+title: "Hello world !"
+date: 2023-06-15T18:35:56+02:00
+draft: true
+type: "post"
+tags: ["hugo", "gokarna", "website", "blog", "hello world"]
+---
+
+Here is my first post in this new website I build with [Hugo](https://gohugo.io/) and [Gokarna](https://gokarna-hugo.netlify.app/) theme. I am going to write about bioinformatics, data science, and other things I like and learn. And I hope you will enjoy it ! 
+
+So to start, I am going to write about how I build this website.
+
+## Create a website with Hugo and Gokarna
+
+I accendital stumbled upon Hugo, when I liked a github page with a Gokarna theme. It was so beautiful and simple that I wanted to have the same. So I started to read about Hugo and how to use it.
+
+#### Install Hugo on your computer
+
+I have used the [homebrew](https://brew.sh/) package manager to install Hugo on my Mac. You can find the instructions [here](https://gohugo.io/getting-started/installing/).
+
+```bash
+brew install hugo
+```
+
+#### Create a new website with Hugo
+
+Create a new website with Hugo is very simple. You just need to run the following command:
+
+```bash
+hugo new site my_website
+```
+
+#### Add a theme - Gokarna
+
+You can find a lot of themes on the [Hugo website](https://themes.gohugo.io/). I have chosen the [Gokarna](https://gokarna-hugo.netlify.app/) theme. To add it to your website, you just need to run the following command:
+
+```bash
+cd my_website
+git init
+git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
+```
+
+#### Edit the config file
+
+You can edit the config file (`hugo.toml`) to change the name of your website, the language, the theme, etc. You can find more information [here](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#basic-configuration).
+
+
+#### Add a new post
+
+To add a new post, you just need to run the following command:
+
+```bash
+hugo new posts/hello_world.md
+```
+
+And then you can edit the file `content/posts/hello_world.md` to write your post. By default, the post is a draft. If you want to publish it, you need to change the `draft` parameter to `false` in the header of the file.
+
+
+#### Deploy your website locally
+
+If you want to see how it looks like, you can run the following command:
+
+```bash
+hugo server -D
+```
+Don't forget to add the `-D` option if you want to see the draft posts.
+
+#### Deploy your website on Github
