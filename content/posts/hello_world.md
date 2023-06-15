@@ -6,17 +6,15 @@ type: "post"
 tags: ["hugo", "gokarna", "website", "blog", "hello world"]
 ---
 
-Here is my first post in this new website I build with [Hugo](https://gohugo.io/) and [Gokarna](https://gokarna-hugo.netlify.app/) theme. I am going to write about bioinformatics, data science, and other things I like and learn. And I hope you will enjoy it ! 
+Welcome to my new website where I will be sharing my thoughts on bioinformatics, data science, and other topics that interest me. I hope you will find it enjoyable!
 
-So to start, I am going to write about how I build this website.
+## Creating a website with Hugo and Gokarna theme
 
-## Create a website with Hugo and Gokarna
-
-I accendital stumbled upon Hugo, when I liked a github page with a Gokarna theme. It was so beautiful and simple that I wanted to have the same. So I started to read about Hugo and how to use it.
+To kick things off, I thought I'd share how I built this website using (Hugo)[https://gohugo.io/] and (Gokarna)[https://gokarna-hugo.netlify.app/] theme. It all started when I stumbled upon a GitHub page with the Gokarna theme, and was immediately drawn to its simplicity and beauty. Intrigued, I began researching how to use Hugo and eventually built this website.
 
 ### Install Hugo on your computer
 
-I have used the [homebrew](https://brew.sh/) package manager to install Hugo on my Mac. You can find the instructions [here](https://gohugo.io/getting-started/installing/).
+I have installed Hugo on my Mac using the [homebrew](https://brew.sh/) package manager. You can find the instructions [here](https://gohugo.io/getting-started/installing/).
 
 ```bash
 brew install hugo
@@ -54,7 +52,7 @@ hugo new index.md
 hugo new posts/hello_world.md
 ```
 
-And then you can edit the file `content/index.md` or `content/posts/hello_world.md` to write your post. By default, the post is a draft. If you want to publish it, you need to change the `draft` parameter to `false` in the header of the file.
+And then you can edit the file `content/index.md` or `content/posts/hello_world.md` to write your post. By default, the post is a draft. If you want to publish it, you need to change the `draft` parameter to `false` in the files' header.
 
 Images can be added in the `static` folder. For example, you can add a picture of yourself in the `static` folder and then add the following line in the `content/index.md` file:
 
@@ -64,14 +62,14 @@ Images can be added in the `static` folder. For example, you can add a picture o
 
 ### Deploy your website locally
 
-If you want to see how it looks like, you can run the following command:
+If you want to see what it looks like, you can run the following command:
 
 ```bash
 hugo server -D
 ```
-Don't forget to add the `-D` option if you want to see the draft posts.
+Don't forget to add the `-D` option to see the draft posts.
 
 ### Deploy your website on GitHub via GitHub actions
 
-Commit the changes and create a GitHub actions workflow based on the steps described [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/). Once the workflow is complete the website will be up and running in no time...! 
+Commit the changes and create a GitHub actions workflow based on the steps described [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/). Once the workflow is complete,the website will be up and running in no time...! 
 
