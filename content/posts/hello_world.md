@@ -48,11 +48,11 @@ You can edit the config file (`hugo.toml`) to change the name of your website, t
 To add a new post, you just need to run the following command:
 
 ```bash
-hugo new index.md
+hugo new _index.md
 hugo new posts/hello_world.md
 ```
 
-And then you can edit the file `content/index.md` or `content/posts/hello_world.md` to write your post. By default, the post is a draft. If you want to publish it, you need to change the `draft` parameter to `false` in the files' header.
+And then you can edit the file `content/_index.md` or `content/posts/hello_world.md` to write your post. By default, the post is a draft. If you want to publish it, you need to change the `draft` parameter to `false` in the files' header.
 
 Images can be added in the `static` folder. For example, you can add a picture of yourself in the `static` folder and then add the following line in the `content/index.md` file:
 
