@@ -1,12 +1,10 @@
 ---
-title: "Ghcr_pacakges"
+title: "How to Upload a Singularity Image to GitHub Container Registry (ghcr.io)"
 date: 2024-11-18T21:21:23+01:00
 draft: false
 type: "post"
 tags: ["ghcr", "docker", "singularity"]
 ---
-
-# How to Upload a Singularity Image to GitHub Container Registry (ghcr.io)
 
 Publishing a Singularity image to GitHub Container Registry (ghcr.io) can be quick and easy! Follow these **three simple steps** to get your locally created image uploaded and ready to share.
 
