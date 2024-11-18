@@ -1,7 +1,9 @@
 ---
 title: "Ghcr_pacakges"
 date: 2024-11-18T21:21:23+01:00
-draft: true
+draft: false
+type: "post"
+tags: ["ghcr", "docker", "singularity"]
 ---
 
 # How to Upload a Singularity Image to GitHub Container Registry (ghcr.io)
